@@ -1,0 +1,10 @@
+body{ background:#f0f0f0;}
+.bgWhite{ background:#FFF;}
+.navbar-default{background:#FFF; border-color:#fff;}
+.navbar-default .navbar-nav>li>a { color:#000;}
+.navbar-nav{ margin-top:17px;}
+.navbar { margin-bottom:15px;}
+.container-fluid>.navbar-header { margin-bottom:15px;}
+.navbar-toggle{ margin-top:23px; float:left; margin-right:34%;}
+.marginTop1{ margin-top:23px;}
+
