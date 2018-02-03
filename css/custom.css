@@ -1,4 +1,4 @@
-body{ background:#f0f0f0;}
+body{ background:#f0f0f0;font-family: 'Gudea', sans-serif;} 
 .bgWhite{ background:#FFF;}
 .navbar-default{background:#FFF; border-color:#fff;}
 .navbar-default .navbar-nav>li>a { color:#000;}
@@ -7,16 +7,36 @@ body{ background:#f0f0f0;}
 .container-fluid>.navbar-header { margin-bottom:15px;}
 .navbar-toggle{ margin-top:23px; float:left; margin-right:34%;}
 .marginTop1{ margin-top:23px;}
-
+.marginBottom1{ margin-Bottom:19px;}
+.blCol{ color:#000;}
+.lightYellow{ color:#dad5ab}
+.whColor{ color:#fff}
+.grborder{border:1px solid #CCC; border-radius:25px;}
+.marginRight{ margin-right:15px;}
+.ft22{font-size:22px !important;}
+h2{font-size:1.6em; font-weight:bold; }
+.price, .furniture-sla, .stPolicy{display:block;}
+.price{ margin:15px 0; font-size:20px;}
+.rating, .comments, .pl-txt { display:inline-block;}
+.furniture-sla{ margin:20px 0; padding:20px 0;border-top:1px solid #999; border-bottom:1px solid #999;}
+.furniture-sla ul { padding-left:15px;}
+.comments{ color:#aeaeae; font-size:15px; }
+.yellowCol{ color:#ffd541;}
+.priceNew{color:#000;}
+.priceOld{color:#aeaeae; text-decoration:line-through;}
+.grColor{ color:#eeeeee;}
+.img-fluid{max-width: 100%;height: auto;}
+.imgTop{ position:relative; top:-25px; left:-35px; z-index:1;}
+.iconsN{ font-size:20px !important; background:#eee; width:50px; height:50px; border-radius:50px; padding:15px; color:#999;}
+.pl-txt{vertical-align:middle; font-size:12px; line-height:15px;}
 @media (max-width: 768px) {
 .breadcrumb {
  display:none;
 }
+.imgTop{ position: inherit; top:-10px; left:0; z-index:1;}
 }
-
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav> li >a:hover, .navbar-default .navbar-nav>.active>a:hover { background:url(../images/nav-bg.png) 11px 16px repeat-x;}
-.breadcrumb{ background:#f0f0f0; text-transform:uppercase; font-size:11px; }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav> li >a:hover, .navbar-default.navbar-nav>.active>a:hover { background:url(../images/nav-bg.png) 11px 16px repeat-x;}
+.breadcrumb{ background:#f0f0f0; text-transform:uppercase; font-size:11px; margin-bottom:50px; }
 .breadcrumb>.active {color:#000;}
 .breadcrumb>li a{ color:#9d9d9d;}
 .breadcrumb>li+li:before{
@@ -28,6 +48,7 @@ body{ background:#f0f0f0;}
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{background:url(../images/submenu-bg.png) 11px 10px repeat-x; color:#000;
 }
 .list-group-item{ padding:20px 15px;}
+a.list-group-item, button.list-group-item{ text-align:right; text-transform:uppercase;}
 
 @media (max-width: 768px) {
 .list-group-item, .list-group {display:inline-block; }
@@ -37,4 +58,7 @@ body{ background:#f0f0f0;}
 }
 .paddingLeftRightZero{padding-left:0 !important; padding-right:0 !important;}
 .list-group {width:100%; background:#FFF;}
+.imgTop{ position: inherit;}
+
+.grbg{ background:#f0f0f0;}
 }
