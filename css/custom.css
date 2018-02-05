@@ -26,42 +26,74 @@ h2{font-size:1.6em; font-weight:bold; }
 .priceOld{color:#aeaeae; text-decoration:line-through;}
 .grColor{ color:#eeeeee;}
 .img-fluid{max-width: 100%;height: auto;}
-.imgTop{ position:relative; top:-25px; left:-35px; z-index:1;}
+.imgTop{ padding:2em 0; margin-left:-4em;}
 .iconsN{ font-size:20px !important; background:#eee; width:50px; height:50px; border-radius:50px; padding:15px; color:#999;}
 .pl-txt{vertical-align:middle; font-size:12px; line-height:15px;}
-@media (max-width: 768px) {
-.breadcrumb {
- display:none;
-}
-.imgTop{ position: inherit; top:-10px; left:0; z-index:1;}
-}
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav> li >a:hover, .navbar-default.navbar-nav>.active>a:hover { background:url(../images/nav-bg.png) 11px 16px repeat-x;}
-.breadcrumb{ background:#f0f0f0; text-transform:uppercase; font-size:11px; margin-bottom:50px; }
- added offset in content and subcategory align
+.breadcrumb{ background:#f0f0f0; text-transform:uppercase; font-size:11px; margin-bottom:80px; }
 .breadcrumb>.active {color:#000;}
 .breadcrumb>li a{ color:#9d9d9d;}
 .breadcrumb>li+li:before{
  content: "";
  background: url(../images/arrow.png) 2px 5px no-repeat;
 }
-.list-group-item{ background:#f0f0f0; border:none; font-size:12px; font-weight:bold;}
-.list-group-item.active, .list-group-item.active:focus, a.list-group-item:hover {background:url(../images/submenu-bg.png) 11px 10px repeat-x;color:#000;}
-.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{background:url(../images/submenu-bg.png) 11px 10px repeat-x; color:#000;
+.clearfix{clear:both}
+.fixdiv{ /*position:fixed; display:block;*/}
+@media (max-width: 768px) {
+.breadcrumb {
+ display:none;
 }
-.list-group-item{ padding:20px 15px;}
-a.list-group-item, button.list-group-item{ text-align:right; text-transform:uppercase;}
+.imgTop{ padding:0; margin-left: auto; margin-top:-0.8em;}
+}
+
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav> li >a:hover, .navbar-default.navbar-nav>.active>a:hover { background:url(../images/nav-bg.png) 11px 16px repeat-x;}
 
 
 @media (max-width: 768px) {
-.list-group-item, .list-group {display:inline-block; }
-.list-group-item{ background:#fff; border:none; font-size:12px; font-weight:bold; text-transform:uppercase;}
-.list-group-item.active, .list-group-item.active:focus, a.list-group-item:hover {background:#fff;color:#000; font-weight:bold;}
-.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{background:#ffd541; color:#fff; 
-}
-.paddingLeftRightZero{padding-left:0 !important; padding-right:0 !important;}
-.list-group {width:100%; background:#FFF;}
-.imgTop{ position: inherit;}
 
+.paddingLeftRightZero{padding-left:0 !important; padding-right:0 !important;}
+
+.imgTop{ position: inherit;}
 .grbg{ background:#f0f0f0;}
+}
+/* added css for scroll div an aside */
+
+#main {
+    /*width: 75%;
+    float: right;*/
+}
+
+#main div.target {
+    background: #fff;
+    /*height: 400px;*/
+	min-height:400px;
+}
+
+#main div.target:nth-child(even) {
+    background: #eee;
+}
+
+#nav {
+    /*width: 25%;
+    position: relative;*/
+}
+
+#nav nav {
+    position: fixed;
+    /*width: 25%;*/
+}
+
+#nav a {
+     color: #333;
+    display: block;
+    padding: 20px;
+    text-align: right;
+    text-decoration: none;
+	padding-left:13em;
+	font-weight:bold;
+}
+
+#nav a:hover, #nav a.active {
+    /*background: #666; */
+	background:url(../images/submenu-bg.png) 11px 10px repeat-x;
+    color: #000;
 }

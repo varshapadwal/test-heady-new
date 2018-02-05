@@ -1,39 +1,16 @@
-$(document).ready(function () {
-    $(document).on("scroll", onScroll);
-    
-    //smoothscroll
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-      
-        var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-    });
+$(document).ready(function(){
+$('#nav nav a').on('click', function(event) {
+    $(this).parent().find('a').removeClass('active');
+    $(this).addClass('active');
 });
 
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-    $('#list-group-item a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('#list-group-item ul li a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
+$(window).on('scroll', function() {
+    $('.target').each(function() {
+        if($(window).scrollTop() >= $(this).offset().top) {
+            var id = $(this).attr('id');
+            $('#nav nav a').removeClass('active');
+            $('#nav nav a[href=#'+ id +']').addClass('active');
         }
     });
-}
+});
+});
