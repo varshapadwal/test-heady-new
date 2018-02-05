@@ -54,22 +54,18 @@ h2{font-size:1.6em; font-weight:bold; }
 
 .imgTop{ position: inherit;}
 .grbg{ background:#f0f0f0;}
+
+
 }
 /* added css for scroll div an aside */
 
-#main {
-    /*width: 75%;
-    float: right;*/
+#main {/*width: 75%; float: right;*/
 }
 
-#main div.target {
-    background: #fff;
-    /*height: 400px;*/
-	min-height:400px;
+#main div.target { background: #fff; /*height: 400px;*/ min-height:400px;
 }
 
-#main div.target:nth-child(even) {
-    background: #eee;
+#main div.target:nth-child(even) {background: #eee;
 }
 
 #nav {
@@ -77,13 +73,11 @@ h2{font-size:1.6em; font-weight:bold; }
     position: relative;*/
 }
 
-#nav nav {
-    position: fixed;
+#nav nav {position: fixed;
     /*width: 25%;*/
 }
 
-#nav a {
-     color: #333;
+#nav a {color: #333;
     display: block;
     padding: 20px;
     text-align: right;
@@ -97,3 +91,23 @@ h2{font-size:1.6em; font-weight:bold; }
 	background:url(../images/submenu-bg.png) 11px 10px repeat-x;
     color: #000;
 }
+
+
+@media (max-width: 768px) {
+#nav{ margin-bottom:30px;}
+#nav nav {position:inherit; background:#fff; border-top:1px solid #e5e5e5;
+    /*width: 25%;*/
+}
+#nav a{
+	display:inline-block;
+	padding-left:0;
+	padding:15px;
+}
+#nav a:hover, #nav a.active{ background:#ffd541; color:#fff; padding:15px;
+}
+}
+
+/* toggle button */
+.navbar-default .navbar-toggle{ background:none;}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{ background-color:none;}
+.navbar-toggle .icon-bar{ height:3px;}
