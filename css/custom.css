@@ -8,11 +8,13 @@ body{ background:#f0f0f0;font-family: 'Gudea', sans-serif;}
 .navbar-toggle{ margin-top:23px; float:left; margin-right:34%;}
 .marginTop1{ margin-top:23px;}
 .marginBottom1{ margin-Bottom:19px;}
+.marginTop2{margin-top:10%;}
 .blCol{ color:#000;}
 .lightYellow{ color:#dad5ab}
 .whColor{ color:#fff}
 .grborder{border:1px solid #CCC; border-radius:25px;}
 .marginRight{ margin-right:15px;}
+.marginTop3{ margin-top:100px;}
 .ft22{font-size:22px !important;}
 h2{font-size:1.6em; font-weight:bold; }
 .price, .furniture-sla, .stPolicy{display:block;}
@@ -38,11 +40,14 @@ h2{font-size:1.6em; font-weight:bold; }
 }
 .clearfix{clear:both}
 .fixdiv{ /*position:fixed; display:block;*/}
+.captionDiv{ position:absolute; top:0; left:0; z-index:10; display:inline-block; width:49%; background:#f0f0f0; padding:0.8em;}
+p.captiondiv{ margin-top:121px;}
 @media (max-width: 768px) {
 .breadcrumb {
  display:none;
 }
 .imgTop{ padding:0; margin-left: auto; margin-top:-0.8em;}
+
 }
 
 .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav> li >a:hover, .navbar-default.navbar-nav>.active>a:hover { background:url(../images/nav-bg.png) 11px 16px repeat-x;}
@@ -51,10 +56,9 @@ h2{font-size:1.6em; font-weight:bold; }
 @media (max-width: 768px) {
 
 .paddingLeftRightZero{padding-left:0 !important; padding-right:0 !important;}
-
 .imgTop{ position: inherit;}
 .grbg{ background:#f0f0f0;}
-
+.paddingLR35{padding:0 35px;}
 
 }
 /* added css for scroll div an aside */
@@ -62,7 +66,7 @@ h2{font-size:1.6em; font-weight:bold; }
 #main {/*width: 75%; float: right;*/
 }
 
-#main div.target { background: #fff; /*height: 400px;*/ min-height:400px;
+#main div.target {/*height: 400px;*/ min-height:400px;
 }
 
 #main div.target:nth-child(even) {background: #eee;
@@ -92,7 +96,7 @@ h2{font-size:1.6em; font-weight:bold; }
     color: #000;
 }
 
-
+.relativPos{ display:block; position:relative;}
 @media (max-width: 768px) {
 #nav{ margin-bottom:30px;}
 #nav nav {position:inherit; background:#fff; border-top:1px solid #e5e5e5;
@@ -105,6 +109,9 @@ h2{font-size:1.6em; font-weight:bold; }
 }
 #nav a:hover, #nav a.active{ background:#ffd541; color:#fff; padding:15px;
 }
+p.captiondiv{ margin-top:0;}
+.captionDiv{ position:inherit; left:0; top:0; width:100%;}
+h2{ font-size:1.4em;}
 }
 
 /* toggle button */
