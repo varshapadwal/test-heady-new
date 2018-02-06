@@ -15,7 +15,7 @@ body{ background:#f0f0f0;font-family: 'Gudea', sans-serif;}
 .grborder{border:1px solid #CCC; border-radius:25px;}
 .marginRight{ margin-right:15px;}
 .marginTop3{ margin-top:100px;}
-
+.strikeThrough{ text-decoration:line-through;}
 .ft22{font-size:22px !important;}
 h2{font-size:1.6em; font-weight:bold; }
 h1{font-size:1.8em; font-weight:bold; }
@@ -29,7 +29,9 @@ h1{font-size:1.8em; font-weight:bold; }
 .yellowCol{ color:#ffd541;}
 .priceNew{color:#000;}
 .priceOld{color:#aeaeae; text-decoration:line-through;}
-.grColor{ color:#dedcdc;}
+.grColor{ color:#9a9a9a;}
+.grColor1{ color:#dedcdc;}
+
 .img-fluid{max-width: 100%;height: auto;}
 .imgTop{ padding:2em 0; margin-left:-4em;}
 .iconsN{ font-size:20px !important; background:#eee; width:50px; height:50px; border-radius:50px; padding:15px; color:#999;}
@@ -122,3 +124,4 @@ h2{ font-size:1.4em;}
 .navbar-default .navbar-toggle{ background:none;}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{ background-color:none;}
 .navbar-toggle .icon-bar{ height:3px;}
+.borderLB01{ border-left:2px solid #f0f0f0;  border-bottom:2px solid #f0f0f0;}
